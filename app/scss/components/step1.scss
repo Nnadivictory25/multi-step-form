@@ -7,15 +7,60 @@
     height: rem(150);
     background: url(/assets/images/bg-sidebar-mobile.svg) no-repeat;
     background-size: 100%;
+
+    .steps__ctn {
+        p {
+            color: #fff;
+            font-size: .95rem;
+            font-weight: 700;
+            border: 1px solid #fff;
+            border-radius: 100%;
+            padding: rem(11.5) rem(19);
+        }
+
+        .active {
+            background-color: var(--light-blue);
+            color: #000 !important;
+            border: none !important;
+        }
+        
+    }
 }
 
 .desktop__navbar {
-    width: 22.2%;
+    width: 22.35%;
     height: 100vh;
     background: url(/assets/images/bg-sidebar-desktop.svg) no-repeat center;
     background-size: 100%;
 
     .steps__ctn {
-        
+        color: #fff;
+        .step {
+            display: flex;
+            column-gap: rem(20);
+            &:not(:last-child) {
+                margin-bottom: rem(35);
+            }
+
+            .active {
+                background-color: var(--light-blue);
+                color: #000 !important;
+                border: none !important;
+            }
+            .number {
+                font-size: 1.2rem;
+                font-weight: 700;
+                border: 1px solid #fff;
+                border-radius: 100%;
+                padding: rem(7) rem(18);
+            }
+
+            .step__id {
+                color: var(--light-gray);
+            }
+            .description {
+                font-weight: 700;
+            }
+        }
     }
 }
