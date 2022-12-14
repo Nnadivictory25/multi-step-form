@@ -1,0 +1,21 @@
+@use '../util/breakpoints.scss' as *;
+@use '../util/functions.scss' as *;
+@use '../util/mixins.scss' as *;
+
+
+.mobile__nav {
+    height: rem(150);
+    background: url(/assets/images/bg-sidebar-mobile.svg) no-repeat;
+    background-size: 100%;
+}
+
+.desktop__navbar {
+    width: 22.2%;
+    height: 100vh;
+    background: url(/assets/images/bg-sidebar-desktop.svg) no-repeat center;
+    background-size: 100%;
+
+    .steps__ctn {
+        
+    }
+}
