@@ -89,17 +89,24 @@
 
     <main class="lg:w-1/2 self-start my-11 pt-4">
 
-      <form class="form sm:fixed sm:z-40 sm:mx-auto inset-x-0 lg:relative">
+      <form class="form fixed z-40 top-[6.45rem] inset-x-0 mx-auto rounded-md lg:relative px-7 py-6 lg:top-0 lg:py-2">
 
         <div class="form__header">
-          <h3 class="text-3xl font-bold">Personal info</h3>
-          <p class="description text-lg">
+          <h3 class="text-3xl font-bold py-1 lg:text-4xl">Personal info</h3>
+          <p class="description text-lg py-0">
             Please provide your name, email address, and phone number.
           </p>
         </div>
 
-        <p class="label">Name</p>
-        <input class="w-full" type="text" placeholder="e.g. Stephen King" name="name" id="name">
+        <p class="label lg:font-medium mt-5">Name</p>
+        <input class="w-full py-3 px-4 mb-4 font-semibold" type="text" placeholder="e.g. Stephen King" name="name" id="name">
+
+        <p class="label lg:font-medium">Email Address</p>
+        <input class="w-full py-3 px-4 mb-4 font-semibold" type="email" placeholder="e.g. stephenking@lorem.com" name="email" id="email">
+
+        <p class="label lg:font-medium">Phone Number</p>
+        <input class="w-full py-3 px-4 mb-4 font-semibold" type="tel" placeholder="e.g. +1 234 567 890" name="phone number" id="phone number">
+
 
       </form>
 

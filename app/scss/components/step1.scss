@@ -3,6 +3,12 @@
 @use '../util/mixins.scss' as *;
 
 
+body {
+    @include breakpoint-down(medium) {
+        background-color: var(--light-gray);
+    }
+}
+
 .mobile__nav {
     height: rem(150);
     background: url(/assets/images/bg-sidebar-mobile.svg) no-repeat;
@@ -67,11 +73,17 @@
 
 
 .form {
+    background-color: #fff;
+    width: 92%;
 
     &__header {
         .description {
             color: var(--cool-gray);
-            
         }
+    }
+
+    input {
+        border: 1px solid var(--cool-gray);
+        border-radius: rem(5);
     }
 }
