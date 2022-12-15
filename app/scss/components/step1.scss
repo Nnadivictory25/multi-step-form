@@ -64,3 +64,14 @@
         }
     }
 }
+
+
+.form {
+
+    &__header {
+        .description {
+            color: var(--cool-gray);
+            
+        }
+    }
+}

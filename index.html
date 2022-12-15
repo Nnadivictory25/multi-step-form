@@ -31,10 +31,10 @@
 </head>
 
 
-  <body>
+  <body class="lg:flex gap-x-40 items-center">
 
     <!-- side navbar for desktop -->
-    <aside class="desktop__navbar hide-for-mobile pt-8 ml-5">
+    <aside class="desktop__navbar hide-for-mobile pt-8 ml-5 ">
       <div class="steps__ctn mt-8 px-9">
         <div class="step">
           <p class="number active">1</p>
@@ -75,6 +75,7 @@
       </div>
     </aside>
 
+    <!-- top navbar for mobile -->
     <div class="mobile__nav hide-for-desktop">
       <div class="steps__ctn container flex justify-center pt-9 mx-auto gap-x-5 px-11">
         <p class="active">1</p>
@@ -83,6 +84,26 @@
         <p>4</p>
       </div>
     </div>
+
+
+
+    <main class="lg:w-1/2 self-start my-11 pt-4">
+
+      <form class="form sm:fixed sm:z-40 sm:mx-auto inset-x-0 lg:relative">
+
+        <div class="form__header">
+          <h3 class="text-3xl font-bold">Personal info</h3>
+          <p class="description text-lg">
+            Please provide your name, email address, and phone number.
+          </p>
+        </div>
+
+        <p class="label">Name</p>
+        <input class="w-full" type="text" placeholder="e.g. Stephen King" name="name" id="name">
+
+      </form>
+
+    </main>
 
     
 
