@@ -1,0 +1,21 @@
+@use '../util/breakpoints.scss' as *;
+@use '../util/functions.scss' as *;
+@use '../util/mixins.scss' as *;
+
+
+.plansCtn {
+    background-color: #fff;
+    width: 92%;
+}
+
+.btn__ctn {
+    .goBackBtn {
+        background: none !important;
+        color: var(--cool-gray);
+        @include transition;
+
+        &:hover {
+            color: var(--marine-blue);
+        }
+    }
+}

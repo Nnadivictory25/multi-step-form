@@ -1,1 +1,1 @@
-{"version":3,"sources":["script.js"],"names":["console","log"],"mappings":"AAAA,aAAAA,QAAQC,IAAI","file":"script.js","sourcesContent":["console.log('hello world');"]}
+{"version":3,"sources":["script.js"],"names":["btn1","document","querySelector","addEventListener","console","log"],"mappings":"AAAA,aAAA,IAAMA,KAAOC,SAASC,cAAc,cAEpCF,KAAKG,iBAAiB,SAAS,WAC3BC,QAAQC,IAAI,iBAChB","file":"script.js","sourcesContent":["const btn1 = document.querySelector('#submitBtn')\r\n\r\nbtn1.addEventListener('click', () => {\r\n    console.log('Submit Clicked');\r\n})"]}

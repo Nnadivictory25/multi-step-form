@@ -81,10 +81,20 @@ body {
             color: var(--cool-gray);
         }
     }
+    
+    .errorMsg {
+        color: var(--straw-red);
+    }
 
     input {
         border: 1px solid var(--cool-gray);
         border-radius: rem(5);
+        @include transition;
+
+        &:focus {
+            outline: none !important;
+            border: 2px solid var(--marine-blue) !important;
+        }
     }
 }
 
