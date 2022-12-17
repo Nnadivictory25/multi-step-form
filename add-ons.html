@@ -37,7 +37,7 @@
     <aside class="desktop__navbar hide-for-mobile pt-8 ml-5 ">
       <div class="steps__ctn mt-8 px-9">
         <div class="step">
-          <p class="number active">1</p>
+          <p class="number">1</p>
           <div class="description__ctn">
             <p class="step__id ">STEP 1</p>
             <p class="description uppercase">
@@ -55,7 +55,7 @@
           </div>
         </div>
         <div class="step">
-          <p class="number">3</p>
+          <p class="number active">3</p>
           <div class="description__ctn">
             <p class="step__id">STEP 3</p>
             <p class="description uppercase">
@@ -78,9 +78,9 @@
     <!-- top navbar for mobile -->
     <div class="mobile__nav hide-for-desktop">
       <div class="steps__ctn container flex justify-center pt-9 mx-auto gap-x-5 px-11">
-        <p class="active">1</p>
+        <p>1</p>
         <p>2</p>
-        <p>3</p>
+        <p class="active">3</p>
         <p>4</p>
       </div>
     </div>
@@ -89,39 +89,58 @@
 
     <main class="lg:w-1/2 self-start my-11 pt-4">
 
-      <form id="form" class="form fixed z-40 top-[6.45rem] inset-x-0 mx-auto rounded-md lg:relative px-7 py-6 lg:top-0 lg:py-2">
-
-        <div class="form__header">
-          <h1 class="text-3xl font-bold py-1 lg:text-4xl">Personal info</h1>
-          <p class="description text-lg py-0">
-            Please provide your name, email address, and phone number.
-          </p>
+      <div id="add-ons" class=" addOns form fixed z-40 top-[5.95rem] inset-x-0 mx-auto rounded-md lg:relative px-7 py-6 lg:top-0 lg:py-2">
+        <div class="addOns__header">
+            <h1 class="text-3xl font-bold py-1 lg:text-4xl"> Pick add-ons</h1>
+            <p class="description text-lg py-0">
+                Add-ons help enhance your gaming experience.
+              </p>
         </div>
 
-        <div class="label flex justify-between lg:font-medium mt-5">
-          <p>Name</p>
-          <p class="errorMsg"></p>
+        <div class="addOns__ctn lg:mr-14 lg:mt-9 mt-4">
+
+            <label class="container active addOns__ctn--card flex justify-between px-3 lg:px-11 my-4 py-4 items-center pl-12 lg:pl-20">
+                <div class="addOns__ctn--card__header">
+                    <h3 class="font-semibold">Online service</h3>
+                    <p class="text-gray-400">Access to multiplayer games</p>
+                </div>
+                <div class="addOns__ctn--card__priceCtn">
+                    <p id="price" class="price font-medium">+$1/mo</p>
+                </div>
+                <input type="checkbox" checked id="chkForOnlineService">
+                <span class="checkmark left-1 lg:left-5"></span>
+              </label>
+
+            <label class="container active addOns__ctn--card flex justify-between px-3 lg:px-11 my-4 py-4 items-center pl-12 lg:pl-20">
+                <div class="addOns__ctn--card__header">
+                    <h3 class="font-semibold">Larger storage</h3>
+                    <p class="text-gray-400">Extra 1TB of cloud save</p>
+                </div>
+                <div class="addOns__ctn--card__priceCtn">
+                    <p id="price" class="price font-medium">+$2/mo</p>
+                </div>
+                <input type="checkbox" checked id="chkForLargerStorage">
+                <span class="checkmark left-1 lg:left-5"></span>
+              </label>
+
+            <label class="container addOns__ctn--card flex justify-between px-3 lg:px-11 my-4 py-4 items-center pl-12 lg:pl-20">
+                <div class="addOns__ctn--card__header">
+                    <h3 class="font-semibold">Customizable Profile</h3>
+                    <p class="text-gray-400 ">Custom theme on your profile</p>
+                </div>
+                <div class="addOns__ctn--card__priceCtn">
+                    <p id="price" class="price font-medium">+$2/mo</p>
+                </div>
+                <input type="checkbox" id="chkForCustProfile">
+                <span class="checkmark left-1 lg:left-5"></span>
+              </label>
+
         </div>
-        <input class="w-full py-3 px-4 mb-4 font-medium" type="text" placeholder="e.g. Stephen King" name="name" id="name">
 
-        
-        <div class="label flex justify-between lg:font-medium mt-5">
-          <p>Email Address</p>
-          <p class="errorMsg"></p>
-        </div>
-        <input class="w-full py-3 px-4 mb-4 font-medium" type="email" placeholder="e.g. stephenking@lorem.com" name="email" id="email">
+    </div>
 
-        
-        <div class="label flex justify-between lg:font-medium mt-5">
-          <p>Phone Number</p>
-          <p class="errorMsg"></p>
-        </div>
-        <input class="w-full py-3 px-4 mb-4 font-medium" type="tel" placeholder="e.g. +1 234 567 890" name="phone number" id="phone number">
-
-
-      </form>
-
-      <div class="btn__ctn bg-white w-full h-20 absolute bottom-0 lg:w-1/2">
+      <div class="btn__ctn z-50 bg-white w-full h-[70px] absolute bottom-0 lg:w-1/2">
+        <button id="goBackBtn1" class=" goBackBtn py-3 font-medium absolute z-40 bottom-3 lg:bottom-10 left-5 lg:left-16" type="submit">Go Back</button>
         <button id="submitBtn" class="rounded-md py-3 px-6 text-white font-medium absolute z-40 bottom-3 lg:bottom-10 right-5 lg:right-16" type="submit">Next Step</button>
       </div>
 

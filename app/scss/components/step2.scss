@@ -3,10 +3,94 @@
 @use '../util/mixins.scss' as *;
 
 
-.plansCtn {
+.plans {
     background-color: #fff;
     width: 92%;
+
+    &__header {
+        .description {
+            color: var(--cool-gray);
+        }
+    }
+
+    &__ctn {
+        .active {
+            border: 2px solid var(--purplish-blue);
+        }
+        &--card {
+            border: 2px solid var(--light-gray);
+            border-radius: 12px;
+            cursor: pointer;
+            @include transition;
+
+            &:hover {
+                border: 2px solid var(--purplish-blue);
+            }
+        }
+    }
+
+    &__subSwitchCtn {
+        .monthly {
+            color: var(--marine-blue);
+        }
+        .yearly {
+            color: var(--cool-gray);
+        }
+        background-color: #F8F9FE;
+        align-items: center;
+
+        .switch {
+            display: inline-block;
+            height: 20px;
+            position: relative;
+            width: 45px;
+          }
+          
+          .switch input {
+            display:none;
+          }
+          
+          .slider {
+            background-color: var(--marine-blue);
+            bottom: 0;
+            cursor: pointer;
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            transition: .2s;
+          }
+          
+          .slider:before {
+            background-color: #fff;
+            bottom: 2.6px;
+            content: "";
+            height: 15px;
+            width: 15px;
+            left: 4px;
+            position: absolute;
+            transition: .2s;
+          }
+          
+          input:checked + .slider {
+            background-color: var(--marine-blue);
+          }
+          
+          input:checked + .slider:before {
+            transform: translateX(20px);
+          }
+          
+          .slider.round {
+            border-radius: 34px;
+          }
+          
+          .slider.round:before {
+            border-radius: 50%;
+          }
+    }
 }
+
+
 
 .btn__ctn {
     .goBackBtn {

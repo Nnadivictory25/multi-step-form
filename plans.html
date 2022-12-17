@@ -89,8 +89,62 @@
 
     <main class="lg:w-1/2 self-start my-11 pt-4">
 
-      <div id="plansCtn" class="form fixed z-40 top-[6.45rem] inset-x-0 mx-auto rounded-md lg:relative px-7 py-6 lg:top-0 lg:py-2">
+      <div id="plans" class=" plans form fixed z-40 top-[6.45rem] inset-x-0 mx-auto rounded-md lg:relative px-7 py-6 lg:top-0 lg:py-2">
+        <div class="plans__header">
+            <h1 class="text-3xl font-bold py-1 lg:text-4xl"> Select your plan</h1>
+            <p class="description text-lg py-0">
+                You have the option of monthly or yearly billing.
+              </p>
+        </div>
 
+        <div class="plans__ctn lg:mt-11 mt-4 lg:flex lg:gap-x-5">
+            
+            <div class="plans__ctn--card active lg:w-1/3 sm:w-full flex lg:items-start items-center lg:flex-col py-4 my-3 lg:gap-y-14 gap-x-5 lg:py-5 relative px-6">
+                <div class="plans__ctn--card__Img">
+                    <img class="w-12" src="/assets/images/icon-arcade.svg" alt="arcade plan.jpg">
+                </div>
+                <div class="plans__ctn--card__header">
+                    <h3 class="text-lg font-semibold">Arcade</h3>
+                    <p class="text-gray-400 font-medium">$9/mo</p>
+                    <p class="font-medium"></p>
+                </div>
+                <input class="invisible absolute" type="checkbox" name="arcade" checked id="arcadeChkBox">
+            </div>
+
+            <div class="plans__ctn--card lg:w-1/3 sm:w-full flex lg:items-start items-center lg:flex-col py-4 my-3 lg:gap-y-14 gap-x-5 lg:py-5 relative px-6">
+                <div class="plans__ctn--card__Img">
+                    <img class="w-12" src="/assets/images/icon-advanced.svg" alt="advanced plan.jpg">
+                </div>
+                <div class="plans__ctn--card__header">
+                    <h3 class="text-lg font-semibold">Advanced</h3>
+                    <p class="text-gray-400 font-medium"> $12/mo</p>
+                    <p class="font-medium"></p>
+                </div>
+                <input class="invisible absolute" type="checkbox" name="advanced" id="advancedChkBox">
+            </div>
+
+            <div class="plans__ctn--card lg:w-1/3 sm:w-full flex lg:items-start items-center lg:flex-col py-4 my-3 lg:gap-y-14 gap-x-5 lg:py-5 relative px-6">
+                <div class="plans__ctn--card__Img">
+                    <img class="w-12" src="/assets/images/icon-pro.svg" alt="arcade plan.jpg">
+                </div>
+                <div class="plans__ctn--card__header">
+                    <h3 class="text-lg font-semibold">Pro</h3>
+                    <p class="text-gray-400 font-medium">$15/mo</p>
+                    <p class="font-medium"></p>
+                </div>
+                <input class="invisible absolute" type="checkbox" name="pro" id="proChkBox">
+            </div>
+
+        </div>
+
+        <div class="plans__subSwitchCtn mt-5 w-full flex justify-center gap-x-5 font-medium py-4 rounded-md">
+            <p class="monthly">Monthly</p>
+            <label class="switch" for="checkbox">
+                <input class="subSwitch" type="checkbox" id="checkbox" />
+                <div class="slider round"></div>
+              </label>
+              <p class="yearly">Yearly</p>
+        </div>
 
     </div>
 
