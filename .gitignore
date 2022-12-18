@@ -5,6 +5,7 @@
 *.sketch
 *.fig
 /node_modules
+/design
 
 # Avoid accidental XD upload if you convert the design file
 ###############################################
