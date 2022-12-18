@@ -34,7 +34,7 @@
   <body class="lg:flex gap-x-40 items-center">
 
     <!-- side navbar for desktop -->
-    <aside class="desktop__navbar hide-for-mobile pt-8 ml-5 ">
+    <aside class="desktop__navbar hide-for-mobile pt-8 ml-5 fade-in">
       <div class="steps__ctn mt-8 px-9">
         <div class="step">
           <p class="number active">1</p>
@@ -76,7 +76,7 @@
     </aside>
 
     <!-- top navbar for mobile -->
-    <div class="mobile__nav hide-for-desktop">
+    <div class="mobile__nav hide-for-desktop fade-in">
       <div class="steps__ctn container flex justify-center pt-9 mx-auto gap-x-5 px-11">
         <p class="active">1</p>
         <p>2</p>
@@ -87,9 +87,9 @@
 
 
 
-    <main class="lg:w-1/2 self-start my-11 pt-4">
+    <main class="lg:w-1/2 self-start my-11 pt-4 fade-in">
 
-      <form id="form" class="form fixed z-40 top-[7rem] inset-x-0 mx-auto rounded-md lg:relative px-7 py-6 lg:top-0 lg:py-2">
+      <form  id="form" class="form fixed z-40 top-[7rem] inset-x-0 mx-auto rounded-md lg:relative px-7 py-6 lg:top-0 lg:py-2">
 
         <div class="form__header">
           <h1 class="text-3xl font-bold py-1 lg:text-4xl">Personal info</h1>
@@ -100,21 +100,21 @@
 
         <div class="label flex justify-between lg:font-medium mt-5">
           <p>Name</p>
-          <p class="errorMsg"></p>
+          <p id="errMsgName" class="errorMsg"></p>
         </div>
         <input  class="w-full py-3 px-4 mb-4 font-medium" type="text" placeholder="e.g. Stephen King" name="name" id="name">
 
         
         <div class="label flex justify-between lg:font-medium mt-5">
           <p>Email Address</p>
-          <p class="errorMsg"></p>
+          <p id="errMsgEmail" class="errorMsg"></p>
         </div>
         <input class="w-full py-3 px-4 mb-4 font-medium" type="email" placeholder="e.g. stephenking@lorem.com" name="email" id="email">
 
         
         <div class="label flex justify-between lg:font-medium mt-5">
           <p>Phone Number</p>
-          <p class="errorMsg"></p>
+          <p id="errMsgPhone" class="errorMsg"></p>
         </div>
         <!-- <input class="test" type="text"> -->
         <input class="w-full py-3 px-4 mb-4 font-medium" type="number" placeholder="e.g. +1 234 567 890" name="phone number" id="phone">
