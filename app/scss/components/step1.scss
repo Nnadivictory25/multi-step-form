@@ -10,7 +10,7 @@ body {
 }
 
 .mobile__nav {
-    height: rem(150);
+    height: rem(200);
     background: url(/assets/images/bg-sidebar-mobile.svg) no-repeat;
     background-size: 100%;
 
@@ -99,6 +99,7 @@ body {
 }
 
 .btn__ctn {
+    bottom: 0 !important;
 
     button {
         background-color: var(--marine-blue) !important;

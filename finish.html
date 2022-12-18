@@ -55,7 +55,7 @@
           </div>
         </div>
         <div class="step">
-          <p class="number active">3</p>
+          <p class="number">3</p>
           <div class="description__ctn">
             <p class="step__id">STEP 3</p>
             <p class="description uppercase">
@@ -64,7 +64,7 @@
           </div>
         </div>
         <div class="step">
-          <p class="number">4</p>
+          <p class="number active">4</p>
           <div class="description__ctn">
             <p class="step__id">STEP 4</p>
             <p class="description uppercase">
@@ -80,8 +80,8 @@
       <div class="steps__ctn container flex justify-center pt-9 mx-auto gap-x-5 px-11">
         <p>1</p>
         <p>2</p>
-        <p class="active">3</p>
-        <p>4</p>
+        <p>3</p>
+        <p class="active">4</p>
       </div>
     </div>
 
@@ -89,59 +89,43 @@
 
     <main class="lg:w-1/2 self-start my-11 pt-4">
 
-      <div id="add-ons" class=" addOns form fixed z-40 top-[6.65rem] inset-x-0 mx-auto rounded-md lg:relative px-7 py-6 lg:top-0 lg:py-2">
-        <div class="addOns__header">
-            <h1 class="text-3xl font-bold py-1 lg:text-4xl"> Pick add-ons</h1>
+      <div id="finish" class=" finish form fixed z-40 top-[6.65rem] inset-x-0 mx-auto rounded-md lg:relative px-7 py-6 lg:top-0 lg:py-2">
+        <div class="finish__header">
+            <h1 class="text-3xl font-bold py-1 lg:text-4xl"> Finishing up</h1>
             <p class="description text-lg py-0">
-                Add-ons help enhance your gaming experience.
+                Double-check everything looks OK before confirming.
               </p>
         </div>
 
-        <div class="addOns__ctn lg:mr-14 lg:mt-9 mt-4">
+        <div class="finish__ctn relative mt-6 rounded-md flex justify-between px-5 lg:px-7 py-5 items-center ">
+            <div class="finish__ctn--left">
+                <div class="planCtn mb-7">
+                    <h3 class="font-semibold">Arcade (Monthly)</h3>
+                    <a class="underline pt-0 mt-0 g hover:text-blue-900" href="">change</a>
+                </div>
+                <p class="g">Online service</p>
+                <p class="g">Larger storage</p>
+            </div>
 
-            <label class="container active addOns__ctn--card flex justify-between px-3 lg:px-11 my-4 py-4 items-center pl-12 lg:pl-20">
-                <div class="addOns__ctn--card__header">
-                    <h3 class="font-semibold">Online service</h3>
-                    <p class="text-gray-400">Access to multiplayer games</p>
-                </div>
-                <div class="addOns__ctn--card__priceCtn">
-                    <p id="price" class="price font-medium">+$1/mo</p>
-                </div>
-                <input type="checkbox" checked id="chkForOnlineService">
-                <span class="checkmark left-1 lg:left-5"></span>
-              </label>
+            <div class="finish__ctn--right">
+                <p class="font-semibold text-right mb-7">$9/mo</p>
+                <p>+$1/mo</p>
+                <p>+$2/mo</p>
+            </div>
+            <hr class="bg-gray-300 absolute w-[90%] top-[90px] h-[1.5px] mx-auto inset-x-0">
+        </div>
+        
 
-            <label class="container active addOns__ctn--card flex justify-between px-3 lg:px-11 my-4 py-4 items-center pl-12 lg:pl-20">
-                <div class="addOns__ctn--card__header">
-                    <h3 class="font-semibold">Larger storage</h3>
-                    <p class="text-gray-400">Extra 1TB of cloud save</p>
-                </div>
-                <div class="addOns__ctn--card__priceCtn">
-                    <p id="price" class="price font-medium">+$2/mo</p>
-                </div>
-                <input type="checkbox" checked id="chkForLargerStorage">
-                <span class="checkmark left-1 lg:left-5"></span>
-              </label>
-
-            <label class="container addOns__ctn--card flex justify-between px-3 lg:px-11 my-4 py-4 items-center pl-12 lg:pl-20">
-                <div class="addOns__ctn--card__header">
-                    <h3 class="font-semibold">Customizable Profile</h3>
-                    <p class="text-gray-400 ">Custom theme on your profile</p>
-                </div>
-                <div class="addOns__ctn--card__priceCtn">
-                    <p id="price" class="price font-medium">+$2/mo</p>
-                </div>
-                <input type="checkbox" id="chkForCustProfile">
-                <span class="checkmark left-1 lg:left-5"></span>
-              </label>
-
+        <div class="finish__totalCtn flex justify-between px-5 lg:px-7 items-center mt-5">
+            <p class="totalWriteUp">Total (per month)</p>
+            <p class="font-bold text-lg">+$12/mo</p>
         </div>
 
     </div>
 
       <div class="btn__ctn z-50 bg-white w-full h-[70px] absolute bottom-0 lg:w-1/2">
         <button id="goBackBtn1" class=" goBackBtn py-3 font-medium absolute z-40 bottom-3 lg:bottom-10 left-5 lg:left-16" type="submit">Go Back</button>
-        <button id="submitBtn" class="rounded-md py-3 px-6 text-white font-medium absolute z-40 bottom-3 lg:bottom-10 right-5 lg:right-16" type="submit">Next Step</button>
+        <button id="submitBtn" class="rounded-md py-3 px-6 text-white font-medium absolute z-40 bottom-3 lg:bottom-10 right-5 lg:right-16" type="submit">Confirm</button>
       </div>
 
     </main>

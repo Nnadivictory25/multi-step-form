@@ -1,0 +1,35 @@
+@use '../util/breakpoints.scss' as *;
+@use '../util/functions.scss' as *;
+@use '../util/mixins.scss' as *;
+
+
+.finish {
+    .g {
+        color: var(--cool-gray);
+    }
+
+    &__header {
+        .description {
+            color: var(--cool-gray);
+        }
+    }
+
+    &__ctn {
+        background-color: #F8F9FE;
+        max-width: rem(510);
+
+        &--left, &--right {
+            p {
+                padding: rem(10) 0 rem(10) 0;
+            }
+        }
+    }
+
+    &__totalCtn {
+        max-width: rem(520);
+
+        .totalWriteUp {
+            color: var(--cool-gray);
+        }
+    }
+}

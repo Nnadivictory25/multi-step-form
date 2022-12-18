@@ -37,7 +37,7 @@
     <aside class="desktop__navbar hide-for-mobile pt-8 ml-5 ">
       <div class="steps__ctn mt-8 px-9">
         <div class="step">
-          <p class="number active">1</p>
+          <p class="number">1</p>
           <div class="description__ctn">
             <p class="step__id ">STEP 1</p>
             <p class="description uppercase">
@@ -64,7 +64,7 @@
           </div>
         </div>
         <div class="step">
-          <p class="number">4</p>
+          <p class="number active">4</p>
           <div class="description__ctn">
             <p class="step__id">STEP 4</p>
             <p class="description uppercase">
@@ -78,10 +78,10 @@
     <!-- top navbar for mobile -->
     <div class="mobile__nav hide-for-desktop">
       <div class="steps__ctn container flex justify-center pt-9 mx-auto gap-x-5 px-11">
-        <p class="active">1</p>
+        <p>1</p>
         <p>2</p>
         <p>3</p>
-        <p>4</p>
+        <p class="active">4</p>
       </div>
     </div>
 
@@ -89,42 +89,21 @@
 
     <main class="lg:w-1/2 self-start my-11 pt-4">
 
-      <form id="form" class="form fixed z-40 top-[7rem] inset-x-0 mx-auto rounded-md lg:relative px-7 py-6 lg:top-0 lg:py-2">
+      <div id="thankyou" class=" thankyou form fixed z-40 top-[6.65rem] inset-x-0 mx-auto text-center rounded-md lg:relative px-7 py-6 lg:top-0 lg:py-2 ">
 
-        <div class="form__header">
-          <h1 class="text-3xl font-bold py-1 lg:text-4xl">Personal info</h1>
-          <p class="description text-lg py-0">
-            Please provide your name, email address, and phone number.
-          </p>
+        <div class="container lg:my-28 my-12">
+            <img class="mx-auto" src="/assets/images/icon-thank-you.svg" alt="">
+
+            <h1 class="thankyou__header text-3xl font-bold my-3">
+                Thank you!
+            </h1>
+            <p class="text-gray-500">  
+                Thanks for confirming your subscription! We hope you have fun
+                using our platform. If you ever need support, please feel free
+                to email us at support@loremgaming.com.
+            </p>
+    
         </div>
-
-        <div class="label flex justify-between lg:font-medium mt-5">
-          <p>Name</p>
-          <p class="errorMsg"></p>
-        </div>
-        <input  class="w-full py-3 px-4 mb-4 font-medium" type="text" placeholder="e.g. Stephen King" name="name" id="name">
-
-        
-        <div class="label flex justify-between lg:font-medium mt-5">
-          <p>Email Address</p>
-          <p class="errorMsg"></p>
-        </div>
-        <input class="w-full py-3 px-4 mb-4 font-medium" type="email" placeholder="e.g. stephenking@lorem.com" name="email" id="email">
-
-        
-        <div class="label flex justify-between lg:font-medium mt-5">
-          <p>Phone Number</p>
-          <p class="errorMsg"></p>
-        </div>
-        <!-- <input class="test" type="text"> -->
-        <input class="w-full py-3 px-4 mb-4 font-medium" type="number" placeholder="e.g. +1 234 567 890" name="phone number" id="phone">
-
-
-      </form>
-
-      <div class="btn__ctn bg-white w-full z-40 h-20 absolute bottom-0 lg:w-1/2">
-        <button id="submitBtn" class="rounded-md py-3 px-6 text-white font-medium absolute z-40 bottom-3 lg:bottom-10 right-5 lg:right-16" type="submit">Next Step</button>
-      </div>
 
     </main>
 
