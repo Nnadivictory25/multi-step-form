@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/multistep-form-FydP-WVaI9)
+- Solution URL: (https://www.frontendmentor.io/solutions/multistep-form-FydP-WVaI9)
 - Live Site URL: [Add live site URL here](https://multi-step-form-victory.vercel.app/)
 
 ## My process
