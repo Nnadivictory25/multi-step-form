@@ -16,7 +16,6 @@
 
     &__ctn {
         background-color: #F8F9FE;
-        max-width: rem(510);
 
         &--left, &--right {
             p {
@@ -26,7 +25,6 @@
     }
 
     &__totalCtn {
-        max-width: rem(520);
 
         .totalWriteUp {
             color: var(--cool-gray);

@@ -738,8 +738,6 @@ let validateAddOns = () => {
 let nextFromAddOns = () => {
     allPrices = []
     validateAddOns()
-
-    if (addOnsValidated) {
         
         if (yearlySelected) {
             if (arcadeChecked) {
@@ -763,7 +761,6 @@ let nextFromAddOns = () => {
             }
         }
         step4()
-    }
 }
 
 
@@ -883,7 +880,7 @@ let step3 = () => {
 
     </div>
 
-      <div class="btn__ctn z-50 bg-white w-full h-[70px] absolute bottom-0 lg:w-[55%]">
+      <div class="btn__ctn z-50 bg-white w-full h-[70px] absolute bottom-0 lg:w-[51%]">
         <button onclick="step2(); handleCheck2();" id="goBackBtn2" class=" goBackBtn py-3 font-medium absolute z-40 bottom-3 lg:bottom-10 left-5 lg:left-16" type="submit">Go Back</button>
         <button onclick="nextFromAddOns();" id="submitBtn" class="rounded-md py-3 px-6 text-white font-medium absolute z-40 bottom-3 lg:bottom-10 right-5 lg:right-16" type="submit">Next Step</button>
       </div>
@@ -1079,7 +1076,7 @@ let step4 = () => {
                     <p class="font-semibold text-right mb-7">${AddOnCost()}</p>
                     ${updateAddOnPriceUI()}
                 </div>
-                <hr class="bg-gray-300 absolute w-[90%] top-[90px] h-[1.5px] mx-auto inset-x-0">
+                ${addOnsValidated ? '<hr class="bg-gray-300 absolute w-[90%] top-[90px] h-[1.5px] mx-auto inset-x-0">' : ''}
             </div>
 
 
