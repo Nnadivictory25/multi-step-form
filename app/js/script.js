@@ -482,7 +482,7 @@ let goBacktoStep1 = () => {
 
 
 
-    <main class="lg:w-1/2 lg:ml-[30%] self-start my-12 pt-4 fade-in">
+    <main class="lg:w-[55%] lg:ml-[30%] self-start my-12 pt-4 fade-in">
 
       <form  id="form" class="form fixed z-40 top-[7rem] inset-x-0 mx-auto rounded-md lg:relative px-7 py-6 lg:top-0 lg:py-2">
 
@@ -516,7 +516,7 @@ let goBacktoStep1 = () => {
 
       </form>
 
-      <div class="btn__ctn bg-white w-full z-40 h-20 absolute bottom-0 lg:w-1/2">
+      <div class="btn__ctn bg-white w-full z-40 h-20 absolute bottom-0 lg:w-[55%]">
         <button onclick="validateForm2('${nameInputValue}', '${emailInputValue}', '${phoneInputValue}');" id="submitBtn" class="rounded-md py-3 px-6 text-white font-medium absolute z-40 bottom-3 lg:bottom-10 right-5 lg:right-16" type="submit">Next Step</button>
       </div>
 
@@ -586,7 +586,7 @@ let step2 = () => {
 
 
 
-    <main class="lg:w-1/2 lg:ml-[30%] self-start my-12 pt-4 ">
+    <main class="lg:w-[55%] lg:ml-[30%] self-start my-12 pt-4 ">
 
       <div id="plans" class="fade-in plans form fixed z-40 top-[6.65rem] inset-x-0 mx-auto rounded-md lg:relative px-7 py-6 lg:top-0 lg:py-2">
         <div class="plans__header">
@@ -649,7 +649,7 @@ let step2 = () => {
 
     </div>
 
-      <div class="btn__ctn bg-white w-full h-20 absolute bottom-0 lg:w-1/2">
+      <div class="btn__ctn bg-white w-full h-20 absolute bottom-0 lg:w-[55%]">
         <button onclick="goBacktoStep1();" id="goBackBtn1" class=" goBackBtn py-3 font-medium absolute z-40 bottom-3 lg:bottom-10 left-5 lg:left-16" type="submit">Go Back</button>
         <button onclick="nextFromPlans();" id="submitBtn" class="rounded-md py-3 px-6 text-white font-medium absolute z-40 bottom-3 lg:bottom-10 right-5 lg:right-16" type="submit">Next Step</button>
       </div>
@@ -829,7 +829,7 @@ let step3 = () => {
 
 
 
-    <main class="lg:w-1/2 lg:ml-[30%] self-start my-12 pt-4">
+    <main class="lg:w-[55%] lg:ml-[30%] self-start my-12 pt-4">
 
       <div id="add-ons" class="fade-in addOns form fixed z-40 top-[6.65rem] inset-x-0 mx-auto rounded-md lg:relative px-7 py-6 lg:top-0 lg:py-2">
         <div class="addOns__header">
@@ -883,7 +883,7 @@ let step3 = () => {
 
     </div>
 
-      <div class="btn__ctn z-50 bg-white w-full h-[70px] absolute bottom-0 lg:w-1/2">
+      <div class="btn__ctn z-50 bg-white w-full h-[70px] absolute bottom-0 lg:w-[55%]">
         <button onclick="step2(); handleCheck2();" id="goBackBtn2" class=" goBackBtn py-3 font-medium absolute z-40 bottom-3 lg:bottom-10 left-5 lg:left-16" type="submit">Go Back</button>
         <button onclick="nextFromAddOns();" id="submitBtn" class="rounded-md py-3 px-6 text-white font-medium absolute z-40 bottom-3 lg:bottom-10 right-5 lg:right-16" type="submit">Next Step</button>
       </div>
@@ -1053,7 +1053,7 @@ let step4 = () => {
 
 
 
-    <main class="lg:w-1/2 lg:ml-[30%] self-start my-12 pt-4">
+    <main class="lg:w-[55%] lg:ml-[30%] self-start my-12 pt-4">
 
         <div id="finish"
             class="fade-in finish form fixed z-40 top-[6.65rem] inset-x-0 mx-auto rounded-md lg:relative px-7 py-6 lg:top-0 lg:py-2">
@@ -1090,7 +1090,7 @@ let step4 = () => {
 
         </div>
 
-        <div class="btn__ctn z-50 bg-white w-full h-[70px] absolute bottom-0 lg:w-1/2">
+        <div class="btn__ctn z-50 bg-white w-full h-[70px] absolute bottom-0 lg:w-[55%]">
             <button onclick="step3()" id="goBackBtn3"
                 class=" goBackBtn py-3 font-medium absolute z-40 bottom-3 lg:bottom-10 left-5 lg:left-16"
                 type="submit">Go Back</button>
