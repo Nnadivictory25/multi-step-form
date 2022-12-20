@@ -50,7 +50,7 @@ Users should be able to:
 
 
 ### What I learned
-I learn't alot about JS event handlers and some crazy DOM manipulations
+I learnt alot about JS event handlers and some crazy DOM manipulations
 
 like this code I used to render prices on add-ons on the finishing page (there's more to it this is just a snippet haha)
 ```js
