@@ -428,9 +428,9 @@ let goBacktoStep1 = () => {
 
     body.innerHTML = `
     <!-- side navbar for desktop -->
-    <aside class="desktop__navbar hide-for-mobile pt-8 ml-5">
+    <aside class=" fixed mt-4 desktop__navbar hide-for-mobile ml-5">
     <img class="fixed z-[-1] top-5 h-[93%]" src="/assets/images/bg-sidebar-desktop.svg" alt="">
-      <div class="steps__ctn mt-8 px-9">
+      <div class="steps__ctn px-9">
         <div class="step">
           <p class="number active">1</p>
           <div class="description__ctn">
@@ -482,7 +482,7 @@ let goBacktoStep1 = () => {
 
 
 
-    <main class="lg:w-1/2 self-start my-11 pt-4 fade-in">
+    <main class="lg:w-1/2 lg:ml-[30%] self-start my-12 pt-4 fade-in">
 
       <form  id="form" class="form fixed z-40 top-[7rem] inset-x-0 mx-auto rounded-md lg:relative px-7 py-6 lg:top-0 lg:py-2">
 
@@ -532,8 +532,9 @@ let step2 = () => {
 
     body.innerHTML = `
     <!-- side navbar for desktop -->
-    <aside class="desktop__navbar hide-for-mobile pt-8 ml-5">
-      <div class="steps__ctn mt-8 px-9">
+    <aside class=" fixed mt-4 desktop__navbar hide-for-mobile ml-5 grow-0">
+    <img class="fixed z-[-1] top-5 h-[93%]" src="/assets/images/bg-sidebar-desktop.svg" alt="">
+      <div class="steps__ctn px-9">
         <div class="step">
           <p class="number">1</p>
           <div class="description__ctn">
@@ -585,7 +586,7 @@ let step2 = () => {
 
 
 
-    <main class="lg:w-1/2 self-start my-11 pt-4 ">
+    <main class="lg:w-1/2 lg:ml-[30%] self-start my-12 pt-4 ">
 
       <div id="plans" class="fade-in plans form fixed z-40 top-[6.65rem] inset-x-0 mx-auto rounded-md lg:relative px-7 py-6 lg:top-0 lg:py-2">
         <div class="plans__header">
@@ -774,8 +775,9 @@ let step3 = () => {
 
     body.innerHTML = `
     <!-- side navbar for desktop -->
-    <aside class="desktop__navbar hide-for-mobile pt-8 ml-5 ">
-      <div class="steps__ctn mt-8 px-9">
+    <aside class=" fixed mt-4 desktop__navbar hide-for-mobile ml-5 ">
+    <img class="fixed z-[-1] top-5 h-[93%]" src="/assets/images/bg-sidebar-desktop.svg" alt="">
+      <div class="steps__ctn px-9">
         <div class="step">
           <p class="number">1</p>
           <div class="description__ctn">
@@ -827,7 +829,7 @@ let step3 = () => {
 
 
 
-    <main class="lg:w-1/2 self-start my-11 pt-4">
+    <main class="lg:w-1/2 lg:ml-[30%] self-start my-12 pt-4">
 
       <div id="add-ons" class="fade-in addOns form fixed z-40 top-[6.65rem] inset-x-0 mx-auto rounded-md lg:relative px-7 py-6 lg:top-0 lg:py-2">
         <div class="addOns__header">
@@ -996,10 +998,10 @@ let step4 = () => {
 
     body.innerHTML = `
 
-
     <!-- side navbar for desktop -->
-    <aside class="desktop__navbar hide-for-mobile pt-8 ml-5 ">
-        <div class="steps__ctn mt-8 px-9">
+     <aside class="desktop__navbar hide-for-mobile fixed mt-4 ml-5">
+    <img class="fixed z-[-1] top-5 h-[93%]" src="/assets/images/bg-sidebar-desktop.svg" alt="">
+        <div class="steps__ctn px-9">
             <div class="step">
                 <p class="number">1</p>
                 <div class="description__ctn">
@@ -1051,7 +1053,7 @@ let step4 = () => {
 
 
 
-    <main class="lg:w-1/2 self-start my-11 pt-4">
+    <main class="lg:w-1/2 lg:ml-[30%] self-start my-12 pt-4">
 
         <div id="finish"
             class="fade-in finish form fixed z-40 top-[6.65rem] inset-x-0 mx-auto rounded-md lg:relative px-7 py-6 lg:top-0 lg:py-2">
@@ -1115,8 +1117,9 @@ let thankYou = () => {
 
     body.innerHTML = `
     <!-- side navbar for desktop -->
-    <aside class="desktop__navbar hide-for-mobile pt-8 ml-5 ">
-      <div class="steps__ctn mt-8 px-9">
+    <aside class=" fixed mt-4 desktop__navbar hide-for-mobile ml-5 ">
+    <img class="fixed z-[-1] top-5 h-[93%]" src="/assets/images/bg-sidebar-desktop.svg" alt="">
+      <div class="steps__ctn px-9">
         <div class="step">
           <p class="number">1</p>
           <div class="description__ctn">
@@ -1168,7 +1171,7 @@ let thankYou = () => {
 
 
 
-    <main class="lg:w-1/2 self-start my-11 pt-4">
+    <main class="lg:w-1/2 lg:ml-[30%] self-start my-12 pt-4">
 
       <div id="thankyou" class=" fade-in thankyou form fixed z-40 top-[6.65rem] inset-x-0 mx-auto text-center rounded-md lg:relative px-7 py-6 lg:top-0 lg:py-2 ">
 
