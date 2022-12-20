@@ -33,3 +33,10 @@
         }
     }
 }
+
+.btn_hover {
+    @include transition;
+    &:hover {
+        opacity: .75;
+    }
+}
