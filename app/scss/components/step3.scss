@@ -84,8 +84,12 @@
             cursor: pointer;
             @include transition;
 
-            &:hover {
-                border: 2px solid var(--purplish-blue);
+            @include breakpoint-up(large) {
+              &.hover {
+                &:hover {
+                  border: 2px solid var(--purplish-blue);
+                }
+              }
             }
 
             &__priceCtn {
