@@ -77,7 +77,7 @@ let updateAddOnPriceUI = () => {
 
 ### Continued development
 
-I want to learn other ways I can write code to be more short and more readable at the same time too
+I want to learn other ways I can write code to be  short and readable at the same time too
 
 
 ### Useful resources
