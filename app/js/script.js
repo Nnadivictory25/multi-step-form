@@ -60,7 +60,9 @@ let step1 = () => {
   };
 
   let validateForm = () => {
-    let  hasNumber = /\d/
+    let hasNumber = /\d/
+    let hasLetter = /[a-z]/i
+
     if (nameInput.value == "") {
       nameValid = false;
       updateValidState();
@@ -110,6 +112,20 @@ let step1 = () => {
       phoneValid = false;
       updateValidState();
       errorMessagePhone.textContent = "Enter a valid phone number";
+      setTimeout(() => {
+        errorMessagePhone.textContent = "";
+      }, 2000);
+    } else if (hasLetter.test(phone.value)) {
+      phoneValid = false;
+      updateValidState();
+      errorMessagePhone.textContent = "Enter a valid phone number";
+      setTimeout(() => {
+        errorMessagePhone.textContent = "";
+      }, 2000);
+    } else if (phone.value[0] !== '+') {
+      phoneValid = false;
+      updateValidState();
+      errorMessagePhone.textContent = "Enter your country code";
       setTimeout(() => {
         errorMessagePhone.textContent = "";
       }, 2000);
@@ -375,7 +391,8 @@ let updateValidState2 = () => {
 
 
 let validateForm2 = (name, email, phone) => {
-    let  hasNumber = /\d/
+  let hasNumber = /\d/
+  let hasLetter = /[a-z]/i
     const errorMessageName = document.querySelector("#errMsgName");
     const errorMessageEmail = document.querySelector("#errMsgEmail");
     const errorMessagePhone = document.querySelector("#errMsgPhone");
@@ -429,6 +446,20 @@ let validateForm2 = (name, email, phone) => {
       phoneValid2 = false;
       updateValidState2();
       errorMessagePhone.textContent = "Enter a valid phone number";
+      setTimeout(() => {
+        errorMessagePhone.textContent = "";
+      }, 2000);
+    } else if (hasLetter.test(phone)) {
+      phoneValid2 = false;
+      updateValidState2();
+      errorMessagePhone.textContent = "Enter a valid phone number";
+      setTimeout(() => {
+        errorMessagePhone.textContent = "";
+      }, 2000);
+    } else if (phone[0] !== '+') {
+      phoneValid2 = false;
+      updateValidState2();
+      errorMessagePhone.textContent = "Enter your country code";
       setTimeout(() => {
         errorMessagePhone.textContent = "";
       }, 2000);
