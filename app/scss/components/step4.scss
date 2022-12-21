@@ -38,3 +38,10 @@
         opacity: .75;
     }
 }
+
+a {
+    @include transition;
+    &:hover {
+        color: var(--marine-blue) !important;
+    }
+}
