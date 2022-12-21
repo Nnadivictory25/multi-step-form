@@ -60,10 +60,18 @@ let step1 = () => {
   };
 
   let validateForm = () => {
+    let  hasNumber = /\d/
     if (nameInput.value == "") {
       nameValid = false;
       updateValidState();
       errorMessageName.textContent = "This field is required";
+      setTimeout(() => {
+        errorMessageName.textContent = "";
+      }, 2000);
+    } else if ( hasNumber.test(nameInput.value)) {
+      nameValid = false;
+      updateValidState();
+      errorMessageName.textContent = "Enter a valid name";
       setTimeout(() => {
         errorMessageName.textContent = "";
       }, 2000);
@@ -79,7 +87,7 @@ let step1 = () => {
       setTimeout(() => {
         errorMessageEmail.textContent = "";
       }, 2000);
-    } else if (!email.value.includes("@") || !email.value.includes(".")) {
+    } else if (!email.value.includes("@") || !email.value.includes(".") || email.value[0] == '.') {
       emailValid = false;
       updateValidState();
       errorMessageEmail.textContent = "Enter a valid email address";
@@ -95,6 +103,13 @@ let step1 = () => {
       phoneValid = false;
       updateValidState();
       errorMessagePhone.textContent = "This field is required";
+      setTimeout(() => {
+        errorMessagePhone.textContent = "";
+      }, 2000);
+    } else if (phone.value.length <= 2) {
+      phoneValid = false;
+      updateValidState();
+      errorMessagePhone.textContent = "Enter a valid phone number";
       setTimeout(() => {
         errorMessagePhone.textContent = "";
       }, 2000);
@@ -360,6 +375,7 @@ let updateValidState2 = () => {
 
 
 let validateForm2 = (name, email, phone) => {
+    let  hasNumber = /\d/
     const errorMessageName = document.querySelector("#errMsgName");
     const errorMessageEmail = document.querySelector("#errMsgEmail");
     const errorMessagePhone = document.querySelector("#errMsgPhone");
@@ -368,6 +384,13 @@ let validateForm2 = (name, email, phone) => {
       nameValid2 = false;
       updateValidState2();
       errorMessageName.textContent = "This field is required";
+      setTimeout(() => {
+        errorMessageName.textContent = "";
+      }, 2000);
+    } else if ( hasNumber.test(name)) {
+      nameValid2 = false;
+      updateValidState2();
+      errorMessageName.textContent = "Enter a valid name";
       setTimeout(() => {
         errorMessageName.textContent = "";
       }, 2000);
@@ -383,7 +406,7 @@ let validateForm2 = (name, email, phone) => {
       setTimeout(() => {
         errorMessageEmail.textContent = "";
       }, 2000);
-    } else if (!email.includes("@") || !email.includes(".")) {
+    } else if (!email.includes("@") || !email.includes(".") || email[0] == '.') {
       emailValid2 = false;
       updateValidState2();
       errorMessageEmail.textContent = "Enter a valid email address";
@@ -402,10 +425,17 @@ let validateForm2 = (name, email, phone) => {
       setTimeout(() => {
         errorMessagePhone.textContent = "";
       }, 2000);
+    } else if (phone.length <= 2) {
+      phoneValid2 = false;
+      updateValidState2();
+      errorMessagePhone.textContent = "Enter a valid phone number";
+      setTimeout(() => {
+        errorMessagePhone.textContent = "";
+      }, 2000);
     } else {
       phoneValid2 = true;
       updateValidState2();
-    }
+      }
     
     if (step1Validatedagain) {
         formData = {
