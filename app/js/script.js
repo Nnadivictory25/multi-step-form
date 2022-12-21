@@ -1041,7 +1041,7 @@ let AddOnCost = () => {
 }
 
 let getTotal = () => {
-    let total = allPrices.reduce((a, b) => a + b)
+    let total = allPrices.reduce((a, b) => a + b, 0)
     let html = ``
     if (yearlySelected) {
         html = `<p class="font-bold text-lg">+$${total}/yr</p>`
