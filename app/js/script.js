@@ -588,7 +588,7 @@ let goBacktoStep1 = () => {
           <p>Phone Number</p>
           <p id="errMsgPhone" class="errorMsg"></p>
         </div>
-        <input  onfocus="handleInput(this)" class="w-full py-3 px-4 mb-4 font-medium" type="number" value=${phoneInputValue} placeholder="e.g. +1 234 567 890" name="phone" id="phone">
+        <input  onfocus="handleInput(this)" class="w-full py-3 px-4 mb-4 font-medium" type="tel" value=${phoneInputValue} placeholder="e.g. +1 234 567 890" name="phone" id="phone">
 
 
       </form>
