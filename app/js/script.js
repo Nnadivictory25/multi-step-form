@@ -67,15 +67,19 @@ let step1 = () => {
       nameValid = false;
       updateValidState();
       errorMessageName.textContent = "This field is required";
+      nameInput.classList.add('red')
       setTimeout(() => {
         errorMessageName.textContent = "";
+        nameInput.classList.remove('red')
       }, 2000);
     } else if ( hasNumber.test(nameInput.value)) {
       nameValid = false;
       updateValidState();
+      nameInput.classList.add('red')
       errorMessageName.textContent = "Enter a valid name";
       setTimeout(() => {
         errorMessageName.textContent = "";
+        nameInput.classList.remove('red')
       }, 2000);
     } else {
       nameValid = true;
@@ -85,16 +89,20 @@ let step1 = () => {
     if (email.value == "") {
       emailValid = false;
       updateValidState();
+      email.classList.add('red')
       errorMessageEmail.textContent = "This field is required";
       setTimeout(() => {
+        email.classList.remove('red')
         errorMessageEmail.textContent = "";
       }, 2000);
     } else if (!email.value.includes("@") || !email.value.includes(".") || email.value[0] == '.') {
       emailValid = false;
       updateValidState();
+      email.classList.add('red')
       errorMessageEmail.textContent = "Enter a valid email address";
       setTimeout(() => {
         errorMessageEmail.textContent = "";
+        email.classList.remove('red')
       }, 2000);
     } else {
       emailValid = true;
@@ -105,29 +113,37 @@ let step1 = () => {
       phoneValid = false;
       updateValidState();
       errorMessagePhone.textContent = "This field is required";
+      phone.classList.add('red')
       setTimeout(() => {
         errorMessagePhone.textContent = "";
+        phone.classList.remove('red')
       }, 2000);
     } else if (phone.value.length <= 2) {
       phoneValid = false;
       updateValidState();
       errorMessagePhone.textContent = "Enter a valid phone number";
+      phone.classList.add('red')
       setTimeout(() => {
         errorMessagePhone.textContent = "";
+        phone.classList.remove('red')
       }, 2000);
     } else if (hasLetter.test(phone.value)) {
       phoneValid = false;
       updateValidState();
       errorMessagePhone.textContent = "Enter a valid phone number";
+      phone.classList.add('red')
       setTimeout(() => {
         errorMessagePhone.textContent = "";
+        phone.classList.remove('red')
       }, 2000);
     } else if (phone.value[0] !== '+') {
       phoneValid = false;
       updateValidState();
       errorMessagePhone.textContent = "Enter your country code";
+      phone.classList.add('red')
       setTimeout(() => {
         errorMessagePhone.textContent = "";
+        phone.classList.remove('red')
       }, 2000);
     } else {
       phoneValid = true;
