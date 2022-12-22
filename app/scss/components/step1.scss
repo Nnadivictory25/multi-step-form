@@ -89,12 +89,12 @@ body {
 
         &:focus {
             outline: none !important;
-            border: 2px solid var(--marine-blue) !important;
+            border: 1px solid var(--marine-blue) !important;
         }
     }
 
     .red {
-        border: 2px solid var(--straw-red) !important;
+        border: 1px solid var(--straw-red) !important;
     }
 }
 
