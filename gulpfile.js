@@ -13,7 +13,7 @@ const browsersync = require('browser-sync').create();
 // Sass Task
 function scssTask() {
   const tailwindcss = require('tailwindcss');
-  return src('app/scss/style.scss', { sourcemaps: true })
+  return src('app/scss/style.scss', { sourcemaps: false })
   .pipe(postcss([
     tailwindcss('tailwind.config.js'),
     require('autoprefixer'),
@@ -25,7 +25,7 @@ function scssTask() {
 
 // JavaScript Task
 function jsTask() {
-  return src('app/js/script.js', { sourcemaps: true })
+  return src('app/js/script.js', { sourcemaps: false })
     .pipe(babel({ presets: ['@babel/preset-env'] }))
     .pipe(terser())
     .pipe(dest('dist', { sourcemaps: '.' }));
